@@ -4,8 +4,10 @@ WORKDIR /app
 
 COPY . /app
 
-RUN npm install --omit=dev
+RUN npm install -g npm@9.6.4
 
-EXPOSE 3000/tcp
+# RUN npm install --omit=dev
+
+EXPOSE 3000
 
 CMD ["npm", "start"]
