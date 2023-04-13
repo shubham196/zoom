@@ -2,9 +2,9 @@ FROM node:16-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY . .
 
-RUN npm install -g npm@9.6.4
+RUN npm install --omit=dev
 
 EXPOSE 3000
 
