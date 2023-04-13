@@ -8,6 +8,6 @@ RUN npm install -g npm@9.6.4
 
 RUN npm install --omit=dev
 
-EXPOSE 3000
+EXPOSE 80
 
 CMD ["npm", "start"]
