@@ -2,11 +2,12 @@ FROM node:16-alpine
 
 WORKDIR /app
 
-COPY . .
+COPY . /app
 
 RUN npm install -g npm@9.6.4
+
 RUN npm install --omit=dev
 
-EXPOSE 4000
+EXPOSE 3000
 
 CMD ["npm", "start"]
